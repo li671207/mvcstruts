@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<formbeans>
+		<bean name="check" class="struts.form.CheckForm"></bean>
+	</formbeans>
+	
+	<action-mapping>
+		<action name="check" type="struts.action.CheckActionImpl" path="/check">
+			<forward name="success" value="/view/success.jsp"></forward>
+			<forward name="failed" value="/view/failed.jsp"></forward>
+		</action>
+	</action-mapping>
+</struts>
